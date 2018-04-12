@@ -24,18 +24,18 @@
 ## ACS SERVER
 - ssh into acs machine `vagrant ssh acs` 
 - Install Ansible in debian/ubuntu `sudo apt-get install ansible` 
-- Verify ansible is install `ansible`
+- Verify ansible is installed correctly`ansible`
 - Exit from acs machine `exit`
 ## WEB SERVER
 - ssh into web machine `vagrant ssh web`
 - Install ansible in CentOS/Redhat enterprise `sudo yum install epel-release` [Install enterprise linux repo]
 - Install Ansible `sudo yum install ansible`
-- Verify Ansible is install properly `ansible`
+- Verify Ansible is installed correctly `ansible`
 - Exit from machine `logout`
 ## DB SERVER
 - SSH into db server/CentOS `vagrant ssh db`
 - Can follow above steps for Web server
-- Verify Ansible is install properly `ansible`
+- Verify Ansible is install correctly `ansible`
 - Exit from machine `logout`
 ## Now you have successfully installed Ansible on all server machine
 
@@ -49,7 +49,8 @@
 `
 - save the file using wq!
 - cat inventory : verify two ipadress
-- run ping command using ansible: `ansible 192.168.33.20 -i inventory -u vagrant -m ping -k`
+
+- run ping command using ansible: `ansible 192.168.33.20 -i inventory -u vagrant -m ping -k` # k used to prompt for password
 - Type password as `vagrant`
 - error for first time as to know fingerprint ! `ssh vagrant@192.168.33.20` click enter
 - Type command again `ansible 192.168.33.20 -i inventory -u vagrant -m ping -k`
