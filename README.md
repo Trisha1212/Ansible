@@ -16,7 +16,7 @@
 -Type `vboxmanage` to check to it installed correctly
 
 # Run vagrant
-https://github.com/Trisha1212/Ansible
+https://github.com/Trisha1212/Ansible/blob/vagrant/Vagrantfile
 Copy Vagrantfile in your system and run `vagrant up`
 Check with `vboxmanage list runningvms`
 
