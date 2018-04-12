@@ -37,13 +37,17 @@ Check with `vboxmanage list runningvms`
 - Can follow above steps for Web server
 - Verify Ansible is install properly `ansible`
 - Exit from machine `logout`
+# Now you have successfully installed Ansible on all server machine
 
-
-### Now you have successfully installed Ansible on all server machine
-
-
-
-
-
-
-
+### TestLab with ansible
+- ssh into acs machine `vagrant ssh acs` 
+- `vim inventory` 
+- Type i 
+`
+192.168.33.20
+192.168.33.30
+`
+- save the file using wq!
+- cat inventory : verify two ipadress
+- run ping command using ansible: `ansible 192.168.33.20 -i inventory -u vagrant -m ping -k`
+- error for first time as to know fingerprint ! `ssh vagrant@192.168.33.20` click enter
