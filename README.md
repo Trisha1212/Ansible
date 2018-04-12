@@ -50,4 +50,8 @@ Check with `vboxmanage list runningvms`
 - save the file using wq!
 - cat inventory : verify two ipadress
 - run ping command using ansible: `ansible 192.168.33.20 -i inventory -u vagrant -m ping -k`
+- Type password as `vagrant`
 - error for first time as to know fingerprint ! `ssh vagrant@192.168.33.20` click enter
+- Type command again `ansible 192.168.33.20 -i inventory -u vagrant -m ping -k`
+- Enter password as `vagrant`
+- verify the success message with pong returned
