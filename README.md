@@ -47,8 +47,8 @@
 192.168.33.20
 192.168.33.30
 `
-- save the file using wq!
-- cat inventory : verify two ipadress
+- save the file using `wq!`
+- cat inventory : verify two ipadress displayed
 
 - run ping command using ansible: `ansible 192.168.33.20 -i inventory -u vagrant -m ping -k` <!-- k used to prompt for password --> 
 - Type password as `vagrant`
