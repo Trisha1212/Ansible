@@ -2,23 +2,23 @@
 
 
 # Install Vagrant
--Vagrant is system controller. Its will download system images so the we can spin our servers quickly.
--Download vagrant - Simple click next next & done(www.vagrantup.com)
--Read more about Vagrant at vagrant website.
+- Vagrant is system controller. Its will download system images so the we can spin our servers quickly.
+- Download vagrant - Simple click next next & done(www.vagrantup.com)
+- Read more about Vagrant at vagrant website.
 
 
 # Install VirtualBox
--Virtual Box
--www.virtualbox.org - downloads based on your OS. 
+- Virtual Box
+- www.virtualbox.org - downloads based on your OS. 
 
 # Check installation done 
--Type `vagrant` to check it installed correctly
--Type `vboxmanage` to check to it installed correctly
+- Type `vagrant` to check it installed correctly
+- Type `vboxmanage` to check to it installed correctly
 
 # Run vagrant
-https://github.com/Trisha1212/Ansible/blob/vagrant/Vagrantfile
-Copy Vagrantfile in your system and run `vagrant up`
-Check with `vboxmanage list runningvms`
+- https://github.com/Trisha1212/Ansible/blob/vagrant/Vagrantfile
+- Copy Vagrantfile in your system and run `vagrant up`
+- Check with `vboxmanage list runningvms`
 
 # Install Ansible
 ## ACS SERVER
