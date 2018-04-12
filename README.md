@@ -56,3 +56,9 @@
 - Type command again `ansible 192.168.33.20 -i inventory -u vagrant -m ping -k`
 - Enter password as `vagrant`
 - verify the success message with pong returned
+If it succeeded, output will look like this:
+```testserver | success >> {
+ "changed": false,
+ "ping": "pong"
+}
+```
