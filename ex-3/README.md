@@ -32,4 +32,24 @@
 username : all_username
 ```
 - Comment : when we run this file under host_vars : web1 should not be present 
-- Run : ```ansible webservers - i inventory_prod -m user -a "name={{username}} password=12345" --sudo ```
+- Run : ```ansible webservers -i inventory_prod -m user -a "name={{username}} password=12345" --sudo ```
+- output :
+```
+web1 | success >> {
+    "append": false, 
+    "changed": false, 
+    "comment": "", 
+    "group": 504, 
+    "home": "/home/web1_user", 
+    "move_home": false, 
+    "name": "web1_user", 
+    "password": "NOT_LOGGING_PASSWORD", 
+    "shell": "/bin/bash", 
+    "state": "present", 
+    "uid": 503
+}
+````
+### Order of precendence :
+- When inside group_vars all [only]  is present the output will be ``` "home": "/home/all_username",```
+- When inside group_vars groups & all is present the output will be ``` "home": "/home/group_user" ```
+- When inside host_vars web1 is present the output will be ``` "home": "/home/web1_user" ```
