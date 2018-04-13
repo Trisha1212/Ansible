@@ -62,3 +62,7 @@ If it succeeded, output will look like this:
  "ping": "pong"
 }
 ```
+
+
+# Issues : 
+- Please find installation steps over ansible documents in different server machine : http://docs.ansible.com/ansible/latest/installation_guide/intro_installation.html?
