@@ -31,6 +31,8 @@ db1 | success >> {
 ```
 
 [comment]: 
+- [datacenter:children] tells ansible that this is groups of group
+- [datacenter:vars] will get applied to all groups inside the group datacenter (and each system in the group)
 - If we dont assign [datacenter:children] it will consider webservers & dbservers as system
 - [datacenter:vars] vars is used for assigning variable.
 
