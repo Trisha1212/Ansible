@@ -32,7 +32,7 @@
 username : all_username
 ```
 - Comment : when we run this file under host_vars : web1 should not be present 
-- Run : ```ansible webservers -i inventory_prod -m user -a "name={{username}} password=12345" --sudo ```
+- Run one command to check order : ```ansible webservers -i inventory_prod -m user -a "name={{username}} password=12345" --sudo ```
 - output :
 ```
 web1 | success >> {
