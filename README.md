@@ -8,7 +8,7 @@
 
 
 # Install VirtualBox
-- Virtual Box
+- Virtual Box - Server Hypervisor[https://en.wikipedia.org/wiki/Hypervisor]
 - www.virtualbox.org - downloads based on your OS. 
 
 # Check installation done 
