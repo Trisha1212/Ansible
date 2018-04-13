@@ -19,6 +19,12 @@
 - https://github.com/Trisha1212/Ansible/blob/vagrant/Vagrantfile
 - Copy Vagrantfile in your system and run `vagrant up`
 - Check with `vboxmanage list runningvms`
+` vagrant up`  
+This should start three vm's with hostnames acs, web and db (Open the vagrant file to see detailed configuration for the VMs) `vagrant status`  
+This should list the vm's upped by the Vagrantfile in current directory.  
+`vagrant ssh name`  
+name is one of the list of names returned from vagrant status command  
+
 
 # Install Ansible
 ## ACS SERVER
@@ -37,6 +43,25 @@
 - Can follow above steps for Web server
 - Verify Ansible is install correctly `ansible`
 - Exit from machine `logout`
+# Based On OS
+### ubuntu/trusty64
+```
+sudo apt-get update
+sudo apt-get install ansible
+```  
+### CentOS
+```
+sudo yum install epel-release
+sudo yum install ansible
+```  
+### From Source
+```
+sudo yum install gcc
+sudo yum install python-setuptools
+sudo easy_install pip
+sudo yum install python-devel
+sudo pip install ansible
+```  
 ## Now you have successfully installed Ansible on all server machine
 
 # TestLab with ansible
