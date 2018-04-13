@@ -16,6 +16,6 @@ Run this command :
 - can verify the `vagrant ssh db` in another terminal `service mysqld status`
 
 
-- Try accessing the webpage cannot because of firewall is blocking
+- Try accessing the webpage cannot because of firewall is blocking :`192.168.33.20`
 ```ansible webservers:dbservers -i inventory -m service -a "name=iptables state=stopped" --sudo```
 
