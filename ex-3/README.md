@@ -1,5 +1,7 @@
 # Scaling out with Multiple inventory files
-tree
+
+- vagrant ssh acs : Installation of Tree : `sudo apt-get install tree` && `apt-get update`
+- Run : tree
 
 ```
 .
