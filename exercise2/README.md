@@ -18,6 +18,18 @@
 - Running database servers : `ansible dbservers -i inventory -m ping`
 - Running group of groups : `ansible datacenter -i inventory -m ping`
 
+# output :
+```web1 | success >> {
+    "changed": false, 
+    "ping": "pong"
+}
+
+db1 | success >> {
+    "changed": false, 
+    "ping": "pong"
+}
+```
+
 [comment]: 
 - If we dont assign [datacenter:children] it will consider webservers & dbservers as system
 - [datacenter:vars] vars is used for assigning variable.
