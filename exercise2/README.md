@@ -1,4 +1,4 @@
-#Inventory File 
+# Inventory File 
 - Can be located any where file system and as long as path is located
 
 # Inventory features
